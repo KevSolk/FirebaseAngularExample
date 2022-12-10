@@ -13,8 +13,14 @@ import { AbstractControl, ControlValueAccessor, FormControlDirective, FormContro
 })
 export class CustomFormInputComponent implements ControlValueAccessor, OnChanges {
 
+  /**
+   * Title of the form control, placed inside the input when content is not present.
+   */
   @Input() title!: string;
 
+  /**
+   * Displays an error via title attribute tag, also turns input red
+   */
   public errorMessage!: string;
 
   public disabled: boolean = false;
@@ -70,6 +76,9 @@ export class CustomFormInputComponent implements ControlValueAccessor, OnChanges
     }
   }
 
+  /**
+   * Triggers when user looses focus on input
+   */
   public triggedFocusOut = () => {
     this.markAsTouched();
     this.formControl?.updateValueAndValidity();

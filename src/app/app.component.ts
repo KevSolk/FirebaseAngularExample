@@ -18,12 +18,6 @@ export class AppComponent implements OnInit {
     translateService.use('en');
   }
   ngOnInit(): void {
-    this.runTest();
   }
 
-  private runTest = async () => {
-    this.store.collection('Test').get().subscribe((res) => {
-      this.testList = res.docs.map((x) => x.data()) as [];
-    });
-  }
 }

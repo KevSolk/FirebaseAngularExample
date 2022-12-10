@@ -14,6 +14,7 @@ export class NftCreateComponent implements OnInit {
 
   public nftFormGroup!: FormGroup;
 
+  // Used for spinner while saving
   public loading: boolean = false;
 
   constructor(

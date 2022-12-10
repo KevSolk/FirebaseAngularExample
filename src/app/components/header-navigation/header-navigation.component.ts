@@ -15,11 +15,19 @@ export class HeaderNavigationComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /**
+   * 
+   * Sets site language to Japanese
+   */
   public setToJapanese = (e:any) => {
     this.preventDefault(e);
     this.translateService.use('jp');
   }
 
+  /**
+   * 
+   * Sets site language to English
+   */
   public setToEnglish = (e:any) => {
     this.preventDefault(e);
     this.translateService.use('en');

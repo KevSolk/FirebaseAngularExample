@@ -1,0 +1,62 @@
+.form-group-container{
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &>app-custom-form-input{
+        margin-top: 1rem;
+        width: 60%;
+        display: flex;
+    }
+
+    &>div{
+        margin-top: 1rem;
+        width:60%;
+    }
+}
+
+.group-submit-button{
+    border:none;
+    border-radius: 30px;
+    color: var(--color-black);
+    background-color: var(--theme-black-light);
+    background: linear-gradient(90deg, rgba(238, 174, 202,1) 0%, rgba(148,187,233,1) 100%);
+    background-size: 200% 200%;
+    padding: .75rem 1.5rem;
+    font-size: 120%;
+    width: 100%;
+    opacity: 100%;
+    font-weight: bold;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    &:hover{
+        cursor: pointer;
+    }
+
+    &:disabled{
+        opacity: 60%;
+        color: var(--color-black);
+        background:none;
+        background-color: var(--color-white);
+        cursor: not-allowed;
+    }
+}
+
+.loading-spinner{
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0,0.1) 0%, rgba(255, 255, 255,0.1) 50%, rgba(0, 0, 0,0.1) 100%);
+    &>div{
+        top: 50%;
+        left: 0;
+        right: 0;
+        position: absolute;
+    }
+    & i{
+        animation: zipzoom 5s linear infinite;
+    }
+}
+
+@keyframes zipzoom { 100% { transform:rotate(360deg); -moz-transform:rotate(360deg); } }

@@ -1,0 +1,11 @@
+@import "variables";
+@import "theme";
+@import "spacing";
+@import 'ngx-toastr/toastr';
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+
+body{
+    margin: 0;
+}

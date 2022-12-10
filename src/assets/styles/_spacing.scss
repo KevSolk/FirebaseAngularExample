@@ -1,0 +1,23 @@
+.flex{
+    display: flex;
+
+    &-f0{
+        flex: 0;
+    }
+
+    &-f1{
+        flex: 1;
+    }
+
+    &-f2{
+        flex: 2;
+    }
+
+    &-f3{
+        flex: 3;
+    }
+
+    &-f4{
+        flex:4;
+    }
+}

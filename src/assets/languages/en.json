@@ -1,0 +1,29 @@
+{
+    "firebase_example":{
+        "navigation":{
+            "title":"FIREBASE ANGULAR EXAMPLE",
+            "language":"Language:",
+            "english":"English",
+            "japanese":"日本語"
+        },
+        "nft_create_form":{
+            "title":"SAVE NEW NFT",
+            "submit": "SUBMIT",
+            "name": "NFT NAME",
+            "description": "NFT DESCRIPTION",
+            "provider":"PROVIDER NAME",
+            "errors":{
+                "required":"This input field is required.",
+                "failed":"Failed to save NFT. Please Try again later."
+            },
+            "success":"Successfully saved a new NFT."
+        },
+        "nft_list":{
+            "title":"CURRENT NFTs",
+            "search":"SEARCH",
+            "sort": "SORT",
+            "edit":"EDIT",
+            "delete":"DELETE"
+        }
+    }
+}

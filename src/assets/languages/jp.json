@@ -1,0 +1,29 @@
+{
+    "firebase_example":{
+        "navigation":{
+            "title":"FIREBASE ANGULARの例",
+            "language":"言語：",
+            "english":"English",
+            "japanese":"日本語"
+        },
+        "nft_create_form":{
+            "title":"新しいNFTを保存",
+            "submit": "提出",
+            "name": "NFT名",
+            "description": "NFTの説明",
+            "provider":"プロバイダー名",
+            "errors":{
+                "required":"ここに入力してください。",
+                "failed":"NFTの保存が出来ませんでした。時間をおいて再度入力してください。"
+            },
+            "success":"新しいNFTが保存されました。"
+        },
+        "nft_list":{
+            "title":"現在のNFTs",
+            "search":"検索",
+            "sort": "並べ替え",
+            "edit":"編集",
+            "delete":"削除"
+        }
+    }
+}

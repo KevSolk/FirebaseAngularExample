@@ -1,0 +1,12 @@
+p,div,h1,h2,h3,h4,h5,h6,span{
+    color: var(--theme-white)
+}
+
+@font-face{
+    font-family:'BalooRegular';
+    src: url('../fonts/Baloo-Regular.ttf');
+}
+
+*{
+    font-family: "BalooRegular", sans-serif; 
+}

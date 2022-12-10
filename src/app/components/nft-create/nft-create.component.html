@@ -1,0 +1,20 @@
+<form class="flex form-group-container" [formGroup]="nftFormGroup" (submit)="submitForm()">
+    <div>
+        <h2>{{'firebase_example.nft_create_form.title'|translate}}</h2>
+    </div>
+    <app-custom-form-input formControlName="name" [title]="'firebase_example.nft_create_form.name'|translate">
+    </app-custom-form-input>
+    <app-custom-form-input formControlName="description"
+        [title]="'firebase_example.nft_create_form.description'|translate"></app-custom-form-input>
+    <app-custom-form-input formControlName="providerName"
+        [title]="'firebase_example.nft_create_form.provider'|translate"></app-custom-form-input>
+    <div>
+        <button [disabled]="!nftFormGroup.valid" class="group-submit-button"
+            type="submit">{{'firebase_example.nft_create_form.submit'|translate}}</button>
+    </div>
+    <div *ngIf="loading" class="loading-spinner">
+        <div>
+            <i class="fas fa-4x fa-circle-notch"></i>
+        </div>
+    </div>
+</form>

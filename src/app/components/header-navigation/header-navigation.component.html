@@ -1,0 +1,12 @@
+<div class="flex navigation-container">
+    <div class="flex-f1">
+        <h1>{{'firebase_example.navigation.title' | translate}}</h1>
+    </div>
+    <div class="flex-f1">
+        <span>{{'firebase_example.navigation.language' | translate}}</span>
+        &nbsp;
+        <a (click)="setToEnglish($event)" href="_blank" target="_self">{{'firebase_example.navigation.english' | translate}}</a>
+        &nbsp;|&nbsp;
+        <a (click)="setToJapanese($event)" href="_blank" target="_self">{{'firebase_example.navigation.japanese' | translate}}</a>
+    </div>
+</div>

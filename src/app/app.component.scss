@@ -1,0 +1,7 @@
+@import 'styles';
+
+.container-spacing{
+    padding: 0 calc(50% - min(1400px, 80%)/2);
+    background-color: var(--theme-black);
+    min-height: 100vh;
+}

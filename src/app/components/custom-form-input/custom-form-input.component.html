@@ -1,0 +1,8 @@
+<input (focusout)="triggedFocusOut()" 
+    [title]="errorMessage | translate" 
+    class="custom-input-container"
+    [ngClass]="{'custom-input-error':errorMessage != null && errorMessage != ''}" 
+    (input)="inputChange($any($event.target))"
+    [placeholder]="title" type="text" 
+    [value]="value" 
+    [disabled]="disabled" />

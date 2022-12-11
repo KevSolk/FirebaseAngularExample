@@ -1,14 +1,14 @@
+# FULL STEPS TO RUN PROJECT
+
+- Within the folder location of the `package.json` folder (usually root) run the command `npm install` or `npm i`
+
+- Once the node packages are download, run the command `ng serve` which will build and spin up the dev server. `ng serve` will run until operation is cancelled.
+
+- Navigate to `http://localhost:4200/` to see the website in action.
+
 # FirebaseAngularExample
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.10.
 
 ## Build
 
